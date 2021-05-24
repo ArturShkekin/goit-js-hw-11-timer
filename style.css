@@ -1,0 +1,22 @@
+.timer {
+  width: 400px;
+  height: 100px;
+  background-color: blue;
+}
+
+.field {
+  width: 100px;
+  height: 100px;
+}
+
+.value {
+  width: 100px;
+  height: 50px;
+  background-color: coral;
+}
+
+.label {
+  width: 100px;
+  height: 50px;
+  background-color: cornflowerblue;
+}
