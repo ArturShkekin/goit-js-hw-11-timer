@@ -14,10 +14,10 @@ class CountdownTimer {
     }
     countDowm() {
         const currentTime = new Date();
-        this.createSpanvalue(currentTime);
+        this.createSpanValue(currentTime);
     }
 
-    showTime() {
+    seeTime() {
         setInterval(() => this.countDowm(), 1000);
     }
 
@@ -38,5 +38,7 @@ const timer = new CountdownTimer({
 document.body.onload = startTimer;
 
 function startTimer() {
-    timer.showTime();
+    timer.seeTime();
 }
+
+
