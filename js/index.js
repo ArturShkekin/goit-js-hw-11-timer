@@ -12,12 +12,13 @@ class CountdownTimer {
     pad(value) {
         return String(value).padStart(2, "0");
     }
+
     countDowm() {
         const currentTime = new Date();
         this.createSpanValue(currentTime);
     }
 
-    seeTime() {
+    showTime() {
         setInterval(() => this.countDowm(), 1000);
     }
 
@@ -32,13 +33,13 @@ class CountdownTimer {
 
 const timer = new CountdownTimer({
   selector: '#timer-1',
-  targetDate: "2021, 11, 11",
+  targetDate: "2022, 01, 01",
 });
 
-document.body.onload = startTimer;
+document.body.onload = startTimer();
 
 function startTimer() {
-    timer.seeTime();
+    timer.showTime();
 }
 
 
