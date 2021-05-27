@@ -33,10 +33,10 @@ class CountdownTimer {
 
 const timer = new CountdownTimer({
   selector: '#timer-1',
-  targetDate: "2022, 01, 01",
+  targetDate: "2022,1,1",
 });
 
-document.body.onload = startTimer();
+document.body.onload = startTimer;
 
 function startTimer() {
     timer.showTime();
